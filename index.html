@@ -8,72 +8,106 @@
   <title>Document</title>
 </head>
 <body>
-  <h1 style="text-align: center; margin-bottom: 36px;">Parallel Programming Finals Exam</h1>
+  <h1 style="text-align: center; margin-bottom: 36px;">Parallel and Distributed Computing Final Exam</h1>
 
   <main>
     <section class="card">
       <h3 class="title">Level 1</h3>
-      <div style="padding-left: 24px">
-        <p>1. Differentiate between SIMD and MIMD? Explain.
-        <p align="justify">— The difference between SIMD and MIMD is that SIMD processes the same single instruciton but operates on different data.
-          An example would be reverting an RGB picture to its negative equivalent.
-          The single instruction is to revert every color to its negative equivalent, and the multiple data are the RGB colors.
-          
-          While for MIMD, multiple instructions are processed by multiple processing units.
-          One instruction is divided into smaller instructions which are processed in a parallel manner.
-          An example would be a server handling multiple data from multiple requests.
-          The multiple instructions are the requests from multiple users, which can be add, update, or delete. And often these instructions affect multiple data.</p>
-        </p>
-  
-        <p>2. What are the performance metrics of parallel systems? Explain each.</p>
-        <p>
-          Execution Time - amount of time it takes to start and finish a problem <br>
-          Total Parallel Overhead - total time of sequential vs parallel processing<br>
-          Speedup - the ratio of time in solving a problem on sequential vs parallel processing<br>
-          Efficiency - amount of resources used to achieve a certain performance<br>
-          Cost - amount processors used to solve a problem
-        </p>
-      </div>
+      <pre>1. Differentiate between SIMD and MIMD? Explain.
+
+— The difference between SIMD and MIMD is that SIMD processes the same single instruciton but operates on different data.
+
+An example would be reverting an RGB picture to its negative equivalent. The single instruction is to revert every color to its negative equivalent, and the multiple data are the RGB colors.
+
+While for MIMD, multiple instructions are processed by multiple processing units. One instruction is divided into smaller instructions which are processed in a parallel manner.
+
+An example would be a server handling multiple data from multiple requests. The multiple instructions are the requests from multiple users, which can be add, update, or delete. And often these instructions affect multiple data.
+
+2. What are the performance metrics of parallel systems? Explain each.
+
+    Execution Time - amount of time it takes to start and finish a problem
+    Total Parallel Overhead - total time of sequential vs parallel processing
+    Speedup - the ratio of time in solving a problem on sequential vs parallel processing
+    Efficiency - amount of resources used to achieve a certain performance
+    Cost - amount processors used to solve a problem
+      </pre>
     </section>
+
+
 
     <section class="card">
       <h3 class="title">Level 2</h3>
-      <div style="padding-left: 24px">
-        <p>1. How does parallel programming/computing works? What do you think
-          will be the advantage of utilizing parallel approach?</p>
-        <p align="justify">— Parallel computing works by leveraging multiple CPUs to process multiple instructions.
-          The advantage would be faster performance and lesser time.
-          A real life application of parallel computing would be creating climate models.
-          Multiple factors such as the data of land, air, ice, and water interact with each other, where parallel computing can analyze and each data points individually to provide faster processing of the model
-        </p>
-      </div>
+      <pre>1. How does parallel programming/computing works? What do you think will be the advantage of utilizing parallel approach?
+
+— Parallel computing works by leveraging multiple CPUs to process multiple instructions.
+The advantage would be faster performance and lesser time.
+
+A real life application of parallel computing would be creating climate models. Multiple factors such as the data of land, air, ice, and water interact with each other, where parallel computing can analyze and each data points individually to provide faster processing of the model
+      </pre>
+
+      <p>2. In a right triangle, the square of the length of one side is equal to the
+        sum of the squares of the lengths of the other two sides. Write a
+        program that prompts the user to enter the length of the three sides of
+        a triangle and then outputs a message indicating whether the triangle
+        is a right triangle.</p>
+      <iframe src="https://trinket.io/embed/python/2e04324662" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      <p>3. Write a program that prompts the user to input a number between 0
+        and 35. If the number is less than or equal to 9, the program should
+        output the number; otherwise, it should output A for 10, B for 11, C for
+        12… and Z for 35.</p>
+      <iframe src="https://trinket.io/embed/python/b64075bd98" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      <p>4. Write a program that will display all numbers divisible by 3, 4 and 5
+        from 1-50.</p>
+      <iframe src="https://trinket.io/embed/python/31a16a1193" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </section>
+
+
 
     <section class="card">
       <h3 class="title">Level 3</h3>
-      <div style="padding-left: 24px">
-        <p>2. Explain the difference between Serial Computing and Parallel
-          Computing.</p>
-        <p align="justify">— Serial computing works by processing multiple instrucitons in a serial manner, one by one.
-          The opposite would be Parallel Computing where multiple instructions are processed simultaneously.
+      <pre>2. Explain the difference between Serial Computing and Parallel Computing.
 
-          An analogy would be a pokemon battle.
-          Each pokemon move is an instruction, and an attack move inflicts damage to the opponent pokemon’s health.
-          And the battle only progresses after a player takes a move.
-          Just like with SISD, the instruction only affects a single data and carries on after processing a single instruction.
+— Serial computing works by processing multiple instrucitons in a serial manner, one by one. The opposite would be Parallel Computing where multiple instructions are processed simultaneously.
+
+An analogy would be a pokemon battle. Each pokemon move is an instruction, and an attack move inflicts damage to the opponent pokemon’s health. And the battle only progresses after a player takes a move. Just like with SISD, the instruction only affects a single data and carries on after processing a single instruction.
           
-          Multiple instructions are processed by multiple processing units.
-          One instruction is divided into smaller instructions which are processed in a parallel manner.
+Multiple instructions are processed by multiple processing units. One instruction is divided into smaller instructions which are processed in a parallel manner.
           
-          A server handling multiple data from multiple requests.
-          The multiple instructions are the requests from multiple users, which can be add, update, or delete.
-          And often these instructions affect multiple data.</p>
-      </div>
+A server handling multiple data from multiple requests. The multiple instructions are the requests from multiple users, which can be add, update, or delete. And often these instructions affect multiple data.
+      </pre>
+
+      <p>3. Create a function in Python that accepts two parameters. The first will
+        be a list of numbers. The second parameter will be a string that can
+        be one of the following values: asc, desc, and none. If the second
+        parameter is "asc," then the function should return a list with the
+        numbers in ascending order. If it's "desc," then the list should be in
+        descending order, and if it's "none," it should return the original list
+        unaltered.</p>
+      <iframe src="https://trinket.io/embed/python/6a2a16831a" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      
     </section>
+
+
 
     <section class="card">
       <h3 class="title">Level 4</h3>
-      <iframe src="https://trinket.io/embed/python/0198203e06" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <pre>1. Write a program that will generate 100 3-digit random numbers and store it in a list. The program should display the following: <br>
+        a. All elements in the list
+        b. All numbers grouped by odd and even numbers 
+        c. All numbers divisible by 9.
+        d. All prime numbers
+        e. All numbers that contains the digit 9 (e.g 29, 91, 393, 961)</pre>
+        <iframe src="https://trinket.io/embed/python/f09492018f" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+      <pre>2. Given a linked list of size K, your task is to complete the function sum_of_lastN_nodes(), which should return the sum of last N nodes of the linked list. The function takes two arguments as input, the reference pointer of the head of the linked list and the integer N.
+Example:
+5->10->6->4->1->12
+N=3
+sum_of_lastN_nodes(6, N)
+Output: Sum of last three nodes in the linked list is 4 + 1 + 12 = 15.</pre>
+      <iframe src="https://trinket.io/embed/python/3e5c00ffb0" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </section>
   </main>
 </body>

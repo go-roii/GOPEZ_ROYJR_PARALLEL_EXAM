@@ -3,6 +3,18 @@
   src: url('fonts/ClearSans-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('fonts/ClearSans-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('fonts/ClearSans-Bold.ttf');
+  font-weight: 700;
+}
+
 body {
   margin: 36px 48px;
   background-color: peachpuff;
@@ -11,8 +23,12 @@ body {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 .card {
@@ -22,6 +38,11 @@ main {
   padding: var(--spacing) calc(var(--spacing) * 1.5) var(--spacing) var(--spacing);
   border-radius: 6px;
   margin-bottom: 24px;
+}
+
+.card pre {
+  white-space: pre-wrap;
+  font-family: 'Clear Sans';
 }
 
 .card .title {
