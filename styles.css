@@ -35,8 +35,8 @@ h1 {
   --spacing: 32px;
 
   background-color: white;
-  padding: var(--spacing) calc(var(--spacing) * 1.5) var(--spacing) var(--spacing);
-  border-radius: 6px;
+  padding: var(--spacing);
+  border-radius: 12px;
   margin-bottom: 24px;
 }
 
@@ -46,9 +46,24 @@ h1 {
 }
 
 .card .title {
-  margin: 0;
+  margin-top: 0;
 }
 
 .card p:last-child {
   margin-bottom: 0;
 }
+
+.card .group {
+  background-color: aliceblue;
+  padding: 24px;
+  border-radius: 12px;
+}
+.card .group:not(:last-child) {
+  margin-bottom: 24px;
+}
+  .card .group pre:only-child {
+    margin: 0;
+  }
+  .card .group p, .card .group pre {
+    margin-top: 0;
+  }
