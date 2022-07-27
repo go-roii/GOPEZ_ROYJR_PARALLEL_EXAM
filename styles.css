@@ -10,3 +10,24 @@ body {
   font-family: 'Clear Sans';
 }
 
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  --spacing: 32px;
+
+  background-color: white;
+  padding: var(--spacing) calc(var(--spacing) * 1.5) var(--spacing) var(--spacing);
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.card .title {
+  margin: 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
