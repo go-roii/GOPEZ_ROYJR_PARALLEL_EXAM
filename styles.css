@@ -1,4 +1,12 @@
-body {
-  margin: 0;
-  background-color: red;
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('fonts/ClearSans-Regular.ttf');
 }
+
+body {
+  margin: 36px 48px;
+  background-color: peachpuff;
+
+  font-family: 'Clear Sans';
+}
+
