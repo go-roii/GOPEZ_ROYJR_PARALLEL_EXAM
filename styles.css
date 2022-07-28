@@ -58,6 +58,10 @@ h1 {
   border-radius: 12px;
   border: 1px solid #7C3E66;
 }
+.card .group:nth-child(odd) {
+  background-color: #243A731A;
+  border: 1px solid #243A73;
+}
 .card .group:not(:last-child) {
   margin-bottom: 24px;
 }
