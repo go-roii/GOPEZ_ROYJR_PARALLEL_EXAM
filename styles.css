@@ -67,6 +67,9 @@ h1 {
   .card .group p:first-child, .card .group pre {
     margin-top: 0;
   }
+  .card .group *:not(p) + p {
+    margin-top: revert;
+  }
 
 
 
