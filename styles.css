@@ -64,7 +64,7 @@ h1 {
   .card .group pre:only-child {
     margin: 0;
   }
-  .card .group p, .card .group pre {
+  .card .group p:first-child, .card .group pre {
     margin-top: 0;
   }
 
