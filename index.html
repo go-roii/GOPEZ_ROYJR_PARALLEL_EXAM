@@ -8,14 +8,13 @@
   <title>Document</title>
 </head>
 <body>
-  <h1 style="text-align: center; margin-bottom: 36px;">Parallel and Distributed Computing Final Exam</h1>
+  <h1 style="text-align: center; margin-bottom: 36px; color: #243A73">Parallel and Distributed Computing Final Exam</h1>
 
   <main>
     <section class="card">
-      <h2 class="title">Level 1</h2>
+      <h2 class="title">Level 1: (4 points each)</h2>
       <div class="group">
-        <pre>1. Differentiate between SIMD and MIMD? Explain.
-
+        <pre><h3 style="margin: 0">1. Differentiate between SIMD and MIMD? Explain.</h3>
 — The difference between SIMD and MIMD is that SIMD processes the same single instruciton but operates on different data.
 An example would be reverting an RGB picture to its negative equivalent. The single instruction is to revert every color to its negative equivalent, and the multiple data are the RGB colors.
 
@@ -24,8 +23,7 @@ An example would be a server handling multiple data from multiple requests. The 
       </div>
       
       <div class="group">
-        <pre>2. What are the performance metrics of parallel systems? Explain each.
-
+        <pre><h3 style="margin: 0">2. What are the performance metrics of parallel systems? Explain each.</h3>
     <b>Execution Time</b> - amount of time it takes to start and finish a problem
     <b>Total Parallel Overhead</b> - total time of sequential vs parallel processing
     <b>Speedup</b> - the ratio of time in solving a problem on sequential vs parallel processing
@@ -37,12 +35,10 @@ An example would be a server handling multiple data from multiple requests. The 
 
 
     <section class="card">
-      <h2 class="title">Level 2</h2>
+      <h2 class="title">Level 2: (5 points each)</h2>
       <div class="group">
-        <pre>1. How does parallel programming/computing works? What do you think will be the advantage of utilizing parallel approach?
-
-— Parallel computing works by leveraging multiple CPUs to process multiple instructions.
-The advantage would be faster performance and lesser time.
+        <pre><h3 style="margin: 0">1. How does parallel programming/computing works? What do you think will be the advantage of utilizing parallel approach?</h3>
+— Parallel computing works by leveraging multiple CPUs to process multiple instructions. The advantage would be faster performance and lesser time.
 
 A real life application of parallel computing would be creating climate models. Multiple factors such as the data of land, air, ice, and water interact with each other, where parallel computing can analyze and each data points individually to provide faster processing of the model.</pre>
       </div>
@@ -53,7 +49,7 @@ A real life application of parallel computing would be creating climate models. 
           program that prompts the user to enter the length of the three sides of
           a triangle and then outputs a message indicating whether the triangle
           is a right triangle.</p>
-        <iframe src="https://trinket.io/embed/python/2e04324662" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        <iframe src="https://trinket.io/embed/python/46287976f4" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
       </div>
 
       <div class="group">
@@ -74,17 +70,11 @@ A real life application of parallel computing would be creating climate models. 
 
 
     <section class="card">
-      <h2 class="title">Level 3</h2>
+      <h2 class="title">Level 3: (6 points each, +2 points if you get 2 LEVEL 3 questions correct.)</h2>
       <div class="group">
-        <pre>2. Explain the difference between Serial Computing and Parallel Computing.
-
+        <pre><h3 style="margin: 0">2. Explain the difference between Serial Computing and Parallel Computing.</h3>
 — Serial computing works by processing multiple instrucitons in a serial manner, one by one. The opposite would be Parallel Computing where multiple instructions are processed simultaneously.
-
-An analogy would be a pokemon battle. Each pokemon move is an instruction, and an attack move inflicts damage to the opponent pokemon’s health. And the battle only progresses after a player takes a move. Just like with SISD, the instruction only affects a single data and carries on after processing a single instruction.
-          
-Multiple instructions are processed by multiple processing units. One instruction is divided into smaller instructions which are processed in a parallel manner.
-          
-A server handling multiple data from multiple requests. The multiple instructions are the requests from multiple users, which can be add, update, or delete. And often these instructions affect multiple data.</pre>
+Multiple instructions are processed by multiple processing units. One instruction is divided into smaller instructions which are processed in a parallel manner.</pre>
       </div>
 
       <div class="group">
@@ -103,7 +93,7 @@ A server handling multiple data from multiple requests. The multiple instruction
 
 
     <section class="card">
-      <h2 class="title">Level 4</h2>
+      <h2 class="title">Level 4: (10 points each)</h2>
       <div class="group">
         <pre>1. Write a program that will generate 100 3-digit random numbers and store it in a list. The program should display the following: <br>
         a. All elements in the list

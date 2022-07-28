@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'Clear Sans';
-  src: url('fonts/ClearSans-Regular.ttf');
+  src: url('assets/fonts/ClearSans-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: url('fonts/ClearSans-Medium.ttf');
+  src: url('assets/fonts/ClearSans-Medium.ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Clear Sans';
-  src: url('fonts/ClearSans-Bold.ttf');
+  src: url('assets/fonts/ClearSans-Bold.ttf');
   font-weight: 700;
 }
 
 body {
   margin: 36px 48px;
-  background-color: peachpuff;
+  background-color: #F2EBE9;
 
   font-family: 'Clear Sans';
 }
@@ -37,26 +37,26 @@ h1 {
   background-color: white;
   padding: var(--spacing);
   border-radius: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
-
-.card pre {
-  white-space: pre-wrap;
-  font-family: 'Clear Sans';
-}
-
-.card .title {
-  margin-top: 0;
-}
+  .card pre {
+    white-space: pre-wrap;
+    font-family: 'Clear Sans';
+  }
+  .card .title {
+    color: #7C3E66;
+    margin-top: 0;
+  }
 
 .card p:last-child {
   margin-bottom: 0;
 }
 
 .card .group {
-  background-color: aliceblue;
+  background-color: #7C3E661A;
   padding: 24px;
   border-radius: 12px;
+  border: 1px solid #7C3E66;
 }
 .card .group:not(:last-child) {
   margin-bottom: 24px;
@@ -67,3 +67,12 @@ h1 {
   .card .group p, .card .group pre {
     margin-top: 0;
   }
+
+
+
+@media (max-width: 767.98px) { 
+  body {
+    margin: 36px 24px;
+  }
+  }
+  
